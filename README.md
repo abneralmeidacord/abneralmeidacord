@@ -6,11 +6,9 @@ I'm a dedicated programming and development student with a focus on mobile apps.
 I'm looking for an opportunity in a company where I can develop myself professionally, demonstrate my technical and personal skills and abilities, thus collaborating for the company's growth.
 
 I worked at @SevenApps for 2 years where I contributed to the front-end development of apps and websites, I have worked on 5 projects within the company.
- hashtag#OpenToWork
 
-.
-.
-.
+
+
 🇧🇷
 Olá Pessoal!
 
