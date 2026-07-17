@@ -1,0 +1,44 @@
+name: Update Streak Stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+
+  workflow_dispatch:
+
+  push:
+    paths:
+      - ".github/workflows/streak-stats.yml"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate light streak
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=default&disable_animations=true
+          path: profile/streak-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate dark streak
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&theme=dark&disable_animations=true
+          path: profile/streak-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/streak-light.svg profile/streak-dark.svg
+          git commit -m "Update streak stats" || exit 0
+          git push
