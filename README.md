@@ -104,7 +104,7 @@
     srcset="./profile/streak-light.svg"
   />
 
-  <img
+<img
     src="./profile/streak-light.svg"
     alt="Abner Almeida's GitHub streak"
   />
@@ -115,15 +115,17 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-activity-graph.vercel.app/graph?username=abneralmeidacord&theme=vue"
+    srcset="https://raw.githubusercontent.com/abneralmeidacord/abneralmeidacord/output/activity-graph-dark.svg"
   />
+
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-activity-graph.vercel.app/graph?username=abneralmeidacord&theme=github-light"
+    srcset="https://raw.githubusercontent.com/abneralmeidacord/abneralmeidacord/output/activity-graph-light.svg"
   />
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=abneralmeidacord&theme=github-light"
-    alt="Abner Almeida's contribution graph"
+
+<img
+    src="https://raw.githubusercontent.com/abneralmeidacord/abneralmeidacord/output/activity-graph-light.svg"
+    alt="Abner Almeida's contribution activity graph"
   />
 </picture>
 
@@ -142,7 +144,7 @@
     srcset="https://raw.githubusercontent.com/abneralmeidacord/abneralmeidacord/output/pacman-contribution-graph.svg"
   />
 
-  <img
+<img
     src="https://raw.githubusercontent.com/abneralmeidacord/abneralmeidacord/output/pacman-contribution-graph.svg"
     alt="Pac-Man eating Abner Almeida's GitHub contributions"
   />
